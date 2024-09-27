@@ -14,6 +14,8 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.343);
 }
 
 button {
@@ -75,6 +77,40 @@ button {
     box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
     transform: scale(0.98);
     
+}
+.btn-reset{
+    background-color: #4A90E2;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 3px 8px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.19);
+    font-size: 20px;
+}
+.btn-reset:hover{
+    background-color: white;
+    color: #4A90E2;
+    
+    
+}
+.btn-reset:active{
+    background-color: rgb(247, 247, 247);
+    color: #4A90E2;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    scale:0.98;
+    
+}
+
+
+input{
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
 }
 
 
