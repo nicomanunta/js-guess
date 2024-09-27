@@ -19,3 +19,62 @@ h1, h2, h3 {
 button {
     font-family: 'Poppins', sans-serif;
 }
+
+.bg-blue{
+    background-color: #4A90E2;
+}
+.bg-lime{
+    background-color: #7ED321;
+}
+.bg-yellow{
+    background-color: #F8D31C; 
+}
+.bg-red{
+    background-color: #D0021B;
+}
+.bg-grey{
+    background-color: #4A4A4A;
+}
+
+.btn-difficulty{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 700;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.19);
+}
+.btn-easy:hover{
+    background-color: white;
+    color: #7ED321;
+}
+.btn-medium:hover{
+    background-color: white;
+    color: #F8D31C;
+}
+.btn-hard:hover{
+    background-color: white;
+    color: #D0021B;
+}
+.btn-easy:active{
+    background-color: rgb(247, 247, 247);
+    color: #7ED321;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    transform: scale(0.98);
+}
+.btn-medium:active{
+    background-color: rgb(247, 247, 247);
+    color: #F8D31C;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    transform: scale(0.98);
+}
+.btn-hard:active{
+    background-color: rgb(247, 247, 247);
+    color: #D0021B;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    transform: scale(0.98);
+    
+}
+
+
