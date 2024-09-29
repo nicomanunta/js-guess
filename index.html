@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>js-guess</title>
 </head>
-<body class="bg-blue">
-    <div class="container d-flex justify-content-center align-items-center  text-center vh-100">
-        <button id="resetButton" class="btn-reset"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+<body class="bg-blue overflow-hidden">
+    <div class=" container d-flex justify-content-center align-items-center  text-center vh-100 overflow-hidden">
         <div class="row">
-            <div class="col-12">
-                <h1 class="text-white text-uppercase">Indovina il numero!</h1>
+            <div class="col-12 position-relative">
+                <button id="resetButton" class="btn-reset mt-3"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                <h1 class="text-white text-uppercase my-4">Indovina il numero!</h1>
             </div>
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <div id="randomNumber" class="random-number"></div>
-                <p id="result" class="result"> </p>
-                <p id="attempts" class="attempts"></p>
-                <input type="number" id="inputNumber" class="input-number" inputmode="numeric" placeholder="Inserisci un numero" >
+                <p id="result" class="result mb-5"> </p>
+                <input type="number" id="inputNumber" class="input-number" inputmode="numeric"  >
+                <p id="attempts" class="attempts mt-4"></p>
 
             </div>
             <div class="col-12">

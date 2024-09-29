@@ -5,6 +5,7 @@ let randomNumberDisplay = document.getElementById('randomNumber');
 let difficultyButton = document.getElementById('difficultyButton');
 let inputNumber = document.getElementById('inputNumber');
 let messageResult = document.getElementById('result');
+let attempts = document.getElementById('attempts');
 let randomNumber;
 
 easyButton.addEventListener('click', () => {
@@ -32,22 +33,31 @@ inputNumber.addEventListener('keydown', function(event){
         let userNumber = parseInt(inputNumber.value);
 
         if (userNumber === randomNumber) {
-            messageResult.innerText = 'Hai indovinato il numero!';
+            messageResult.innerText = 'Hai indovinato!';
+            messageResult.style.color = '#7ED321'
+            randomNumberDisplay.style.filter = 'blur(0px)';
+            messageResult.style.animation = 'bounce 2s infinite';
         } else if (userNumber > randomNumber){
             if (userNumber > randomNumber + 100) {
                 messageResult.innerText = "Sei lontano, più piccolo!";
+                messageResult.style.color = '#D0021B'
             } else if (userNumber > randomNumber + 20) {
                 messageResult.innerText = "Più piccolo!";
+                messageResult.style.color = '#f8831c'
             } else {
                 messageResult.innerText = "Ci sei quasi, un po' più piccolo!";
+                messageResult.style.color = '#F8D31C'
             }
         } else if (userNumber < randomNumber){
             if (userNumber < randomNumber - 100) {
                 messageResult.innerText = "Sei lontano, più grande!";
+                messageResult.style.color = '#D0021B'
             } else if (userNumber < randomNumber - 20) {
                 messageResult.innerText = "Più grande!";
+                messageResult.style.color = '#f8831c'
             } else {
                 messageResult.innerText = "Ci sei quasi, un po' più grande!";
+                messageResult.style.color = '#F8D31C'
             }
         }
     }
