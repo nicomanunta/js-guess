@@ -7,30 +7,36 @@ let inputNumber = document.getElementById('inputNumber');
 let messageResult = document.getElementById('result');
 let attempts = document.getElementById('attempts');
 let randomNumber;
+let attemptsNumber = 0;
 
 easyButton.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random () * 10) + 1;
     randomNumberDisplay.innerText = randomNumber;
     difficultyButton.style.display = 'none';
     inputNumber.style.display = 'inline-block';
+    attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 });
 mediumButton.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random () * 100) + 1;
     randomNumberDisplay.innerText = randomNumber;
     difficultyButton.style.display = 'none';
     inputNumber.style.display = 'inline-block';
+    attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 });
 hardButton.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random () * 1000) + 1;
     randomNumberDisplay.innerText = randomNumber; 
     difficultyButton.style.display = 'none';
     inputNumber.style.display = 'inline-block';
+    attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 });
 
 inputNumber.addEventListener('keydown', function(event){
     if (event.key === 'Enter') {
 
         let userNumber = parseInt(inputNumber.value);
+        attemptsNumber++;
+        attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 
         if (userNumber === randomNumber) {
             messageResult.innerText = 'Indovinato!';
@@ -71,6 +77,8 @@ resetButton.addEventListener('click', () => {
     messageResult.innerText = '';
     randomNumberDisplay.style.filter = 'blur(20px)';
     messageResult.style.animation = 'none';
+    attemptsNumber = 0;
+    attempts.innerHTML = ' ';
     
     
 });
