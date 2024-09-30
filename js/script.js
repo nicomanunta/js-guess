@@ -33,7 +33,7 @@ inputNumber.addEventListener('keydown', function(event){
         let userNumber = parseInt(inputNumber.value);
 
         if (userNumber === randomNumber) {
-            messageResult.innerText = 'Hai indovinato!';
+            messageResult.innerText = 'Indovinato!';
             messageResult.style.color = '#7ED321'
             randomNumberDisplay.style.filter = 'blur(0px)';
             messageResult.style.animation = 'bounce 2s infinite';
@@ -61,4 +61,16 @@ inputNumber.addEventListener('keydown', function(event){
             }
         }
     }
-})
+});
+
+// aggiungo bottone reset
+resetButton.addEventListener('click', () => {
+    randomNumberDisplay.innerText = ' ';
+    difficultyButton.style.display = 'inline-block';
+    inputNumber.style.display = 'none';
+    messageResult.innerText = '';
+    randomNumberDisplay.style.filter = 'blur(20px)';
+    messageResult.style.animation = 'none';
+    
+    
+});
