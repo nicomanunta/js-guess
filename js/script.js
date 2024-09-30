@@ -13,21 +13,21 @@ easyButton.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random () * 10) + 1;
     randomNumberDisplay.innerText = randomNumber;
     difficultyButton.style.display = 'none';
-    inputNumber.style.display = 'inline-block';
+    inputNumber.style.display = 'inline';
     attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 });
 mediumButton.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random () * 100) + 1;
     randomNumberDisplay.innerText = randomNumber;
     difficultyButton.style.display = 'none';
-    inputNumber.style.display = 'inline-block';
+    inputNumber.style.display = 'inline';
     attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 });
 hardButton.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random () * 1000) + 1;
     randomNumberDisplay.innerText = randomNumber; 
     difficultyButton.style.display = 'none';
-    inputNumber.style.display = 'inline-block';
+    inputNumber.style.display = 'inline';
     attempts.innerHTML = 'Tentativi <br>'+ attemptsNumber;
 });
 
@@ -72,7 +72,7 @@ inputNumber.addEventListener('keydown', function(event){
 // aggiungo bottone reset
 resetButton.addEventListener('click', () => {
     randomNumberDisplay.innerText = ' ';
-    difficultyButton.style.display = 'inline-block';
+    difficultyButton.style.display = 'inline';
     inputNumber.style.display = 'none';
     messageResult.innerText = '';
     randomNumberDisplay.style.filter = 'blur(20px)';
