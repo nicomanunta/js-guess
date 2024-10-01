@@ -62,19 +62,19 @@ h1, h2, h3 {
 .btn-easy:active{
     background-color: rgb(247, 247, 247);
     color: #7ED321;
-    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.19);
     transform: scale(0.98);
 }
 .btn-medium:active{
     background-color: rgb(247, 247, 247);
     color: #F8D31C;
-    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.19);
     transform: scale(0.98);
 }
 .btn-hard:active{
     background-color: rgb(247, 247, 247);
     color: #D0021B;
-    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.19);
     transform: scale(0.98);
     
 }
@@ -99,7 +99,7 @@ h1, h2, h3 {
 .btn-reset:active{
     background-color: rgb(247, 247, 247);
     color: #4A90E2;
-    box-shadow: 3px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.19);
     scale:0.98;
     
 }
